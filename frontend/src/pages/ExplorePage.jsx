@@ -12,7 +12,7 @@ const ExplorePage = () => {
     setRepos([]);
     try {
       const res = await fetch(
-        `http://localhost:2000/api/explore/repos/${language}`
+        `/api/explore/repos/${language}`
       );
       const {repos} = await res.json();
       setRepos(repos);
